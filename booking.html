@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе «Мрія» у Лубнах — Бронювання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-900 tracking-wider flex items-center gap-2">
+                <span class="text-amber-600">☕</span> Мрія
+            </a>
+            <nav class="hidden md:flex gap-2 items-center">
+                <a href="index.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium text-sm transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium text-sm transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium text-sm transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium text-sm transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium text-sm transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium text-sm transition">Контакти</a>
+            </nav>
+            <div class="md:hidden flex items-center">
+                <a href="booking.html" class="bg-amber-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">Бронь</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-amber-50 border-b border-amber-100 py-3">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-600">
+            <a href="index.html" class="hover:text-amber-600">Головна</a> > <span class="text-gray-900 font-medium">Бронювання</span>
+        </div>
+    </div>
+
+    <main class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-10 border border-gray-100">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-bold mb-2">Бронювання столика</h1>
+                <p class="text-gray-600 text-sm">Заповніть форму нижче, і ми зв'яжемося з вами для підтвердження броні.</p>
+            </div>
+
+            <form action="https://formsubmit.co/info@mriya.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-700">Ваше ім'я</label>
+                    <input type="text" name="name" required placeholder="Введіть ваше ім'я" class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-700">Номер телефону</label>
+                    <input type="tel" name="phone" required placeholder="+380..." class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-700">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="20" value="2" required class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-700">Побажання</label>
+                    <textarea name="comments" rows="3" placeholder="Особливі побажання до замовлення..." class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Забронювати</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Кафе «Мрія»</h3>
+                <p class="text-sm text-gray-400">Затишне місце у Лубнах для приємного відпочинку та смачних страв.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm text-gray-400 mb-2">вулиця Монастирська, 8-20, Лубни</p>
+                <p class="text-sm text-gray-400 mb-2">Телефон: +380509898195</p>
+                <p class="text-sm text-gray-400">Email: info@mriya.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm text-gray-400 mb-2">Пн-Нд: 10:00 - 22:00</p>
+                <p class="text-xs text-gray-500 mt-4">&copy; 2026 Мрія. Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
